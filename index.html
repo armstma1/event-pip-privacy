@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event PiP Privacy Policy</title>
+  <style>
+    body { max-width: 780px; margin: 3rem auto; padding: 0 1.25rem; color: #14243b; font: 18px/1.6 system-ui, sans-serif; }
+    h1, h2 { line-height: 1.2; }
+    a { color: #087f5b; }
+  </style>
+</head>
+<body>
+  <h1>Event PiP Privacy Policy</h1>
+  <p><strong>Effective date:</strong> 14 October 2026</p>
+  <p>Event PiP connects only to the Home Assistant and, in the direct-install edition, optional Frigate servers that the user configures. The developer does not operate an Event PiP cloud service and does not receive users' account details, camera images, alert rules, device identifiers, diagnostics, or usage data.</p>
+
+  <h2>Data handled on the device</h2>
+  <ul>
+    <li><strong>Home Assistant address and access token.</strong> The token is encrypted using a key held by Android Keystore and remains on the user's device.</li>
+    <li><strong>Alert rules and preferences.</strong> These are stored in the app's private device storage.</li>
+    <li><strong>Camera snapshots and video streams.</strong> These are transferred directly between the device and the server configured by the user for immediate display. Event PiP does not retain them after display.</li>
+    <li><strong>Optional Frigate connection.</strong> The direct-install edition can connect directly to a Frigate server selected by the user.</li>
+  </ul>
+  <p>Event PiP contains no advertising or analytics SDKs. The developer does not sell or share personal data.</p>
+
+  <h2>Data security</h2>
+  <p>The Google Play edition requires HTTPS for Home Assistant connections. The direct-install edition permits local HTTP and RTSP for compatibility with private smart-home networks; users should enable those connections only on a trusted network or through a secure VPN.</p>
+  <p>No security measure is infallible. Users control the servers and network to which Event PiP connects and should revoke the Home Assistant token promptly if a device is lost or compromised.</p>
+
+  <h2>Android permissions</h2>
+  <ul>
+    <li>Internet and network-state access connect to user-configured servers.</li>
+    <li>Boot and foreground-service access keep monitoring active after restart when the user enables Monitoring.</li>
+    <li>Notification access displays service status and camera alerts.</li>
+    <li>Both editions can optionally use Android's display-over-other-apps permission solely to draw a bounded, non-interactive camera or message popup. The user must explicitly grant this access and can revoke it at any time. Event PiP does not inspect or capture screen content.</li>
+    <li>Only the direct-install edition offers an optional Accessibility fallback for TVs that hide the standard overlay setting. It does not inspect screen content, observe typed text, read controls, or collect accessibility data. Accessibility access is not included in the Google Play edition.</li>
+  </ul>
+
+  <h2>Retention and deletion</h2>
+  <p>Configuration remains on the device until the user changes it, clears the app's storage, or uninstalls the app. Camera media is not retained by Event PiP. Users can stop processing by turning Monitoring off and can remove credentials by clearing the Home Assistant address and token and saving.</p>
+
+  <h2>Children</h2>
+  <p>Event PiP is a general smart-home utility and is not directed to children.</p>
+
+  <h2>Changes and contact</h2>
+  <p>Material changes will be published with a revised effective date. For privacy questions or deletion assistance, contact the developer through <a href="https://github.com/armstma1">the developer's GitHub profile</a>.</p>
+</body>
+</html>
