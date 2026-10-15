@@ -13,19 +13,19 @@
 <body>
   <h1>Event PiP Privacy Policy</h1>
   <p><strong>Effective date:</strong> 14 October 2026</p>
-  <p>Event PiP connects only to the Home Assistant and, in the direct-install edition, optional Frigate servers that the user configures. The developer does not operate an Event PiP cloud service and does not receive users' account details, camera images, alert rules, device identifiers, diagnostics, or usage data.</p>
+  <p>Event PiP connects only to the Home Assistant and optional Frigate servers that the user configures. The developer does not operate an Event PiP cloud service and does not receive users' account details, camera images, alert rules, device identifiers, diagnostics, or usage data.</p>
 
   <h2>Data handled on the device</h2>
   <ul>
     <li><strong>Home Assistant address and access token.</strong> The token is encrypted using a key held by Android Keystore and remains on the user's device.</li>
     <li><strong>Alert rules and preferences.</strong> These are stored in the app's private device storage.</li>
     <li><strong>Camera snapshots and video streams.</strong> These are transferred directly between the device and the server configured by the user for immediate display. Event PiP does not retain them after display.</li>
-    <li><strong>Optional Frigate connection.</strong> The direct-install edition can connect directly to a Frigate server selected by the user.</li>
+    <li><strong>Optional Frigate connection.</strong> A Frigate address, username and password are stored only when supplied by the user. Credentials are encrypted using a key held by Android Keystore and remain on the user's device. The Google Play edition connects to Frigate only over HTTPS.</li>
   </ul>
   <p>Event PiP contains no advertising or analytics SDKs. The developer does not sell or share personal data.</p>
 
   <h2>Data security</h2>
-  <p>The Google Play edition requires HTTPS for Home Assistant connections. The direct-install edition permits local HTTP and RTSP for compatibility with private smart-home networks; users should enable those connections only on a trusted network or through a secure VPN.</p>
+  <p>The Google Play edition requires HTTPS for Home Assistant and optional Frigate connections. The direct-install edition permits local HTTP and RTSP for compatibility with private smart-home networks; users should enable those connections only on a trusted network or through a secure VPN.</p>
   <p>No security measure is infallible. Users control the servers and network to which Event PiP connects and should revoke the Home Assistant token promptly if a device is lost or compromised.</p>
 
   <h2>Android permissions</h2>
@@ -38,7 +38,7 @@
   </ul>
 
   <h2>Retention and deletion</h2>
-  <p>Configuration remains on the device until the user changes it, clears the app's storage, or uninstalls the app. Camera media is not retained by Event PiP. Users can stop processing by turning Monitoring off and can remove credentials by clearing the Home Assistant address and token and saving.</p>
+  <p>Configuration remains on the device until the user changes it, clears the app's storage, or uninstalls the app. Camera media is not retained by Event PiP. Users can stop processing by turning Monitoring off and can remove credentials by clearing the Home Assistant and Frigate connection fields and saving.</p>
 
   <h2>Children</h2>
   <p>Event PiP is a general smart-home utility and is not directed to children.</p>
